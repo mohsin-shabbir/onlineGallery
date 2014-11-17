@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dynamic Galery</title>
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/jquery-1.8.2.min.js"></script>
+</head>
+<script>
+function displayLogin()
+{
+	$("#login").slideToggle("slow");
+	$("#signin").hide("slow");
+	$("#signup").hide("slow");
+	$("#signupbtn").show("slow");
+	$("#forgetPassword").hide("slow");
+	$("#forgetPassBtn").show("slow");
+}
+function displaySignUp()
+{
+	$("#signup").slideToggle("slow");
+	$("#signupbtn").hide("slow");
+	$("#login").hide("slow");
+	$("#signin").show("slow");
+	$("#forgetPassword").hide("slow");
+	$("#forgetPassBtn").show("slow");
+}
+function displayForgetPasswordForm()
+{
+	$("#forgetPassword").slideToggle("slow");
+	$("#signup").hide("slow");
+	$("#signupbtn").show("slow");
+	$("#login").hide("slow");
+	$("#forgetPassBtn").hide("slow");
+	$("#signin").show("slow");
+}
+</script>
+<body>
+<div class="header">
+    	<div class="leftDiv">
+        	<img src="images/globe.png"   />
+        </div>
+        <div class="rightDiv">
+        	<div>
+            LOGIN AND PASSWORD
+            </div>
+        </div>
+    </div>
+	<div class="wraper">
+    	<div id="login" class="display">
+    	<form class="signIn">
+    	<div class="field">
+    	<label>TITLE</label>
+        <hr />
+        <div class="textStyle">
+        	Mobit Solutions Login Form
+        </div>
+        </div>
+        <div class="field">
+    	<label>User Name</label>
+        <hr />
+        <div>
+        	<input type="text" name="username"  />
+        </div>
+        </div>
+        <div class="field">
+    	<label>PASSWORD</label>
+        <hr />
+        <div>
+        	<input type="password" name="password"  />
+        </div>
+        </div>
+        
+        <div class="field">
+    	<div>
+        	<input type="submit" name="login" value="LOGIN"  />
+        </div>
+        </div>
+        </form>
+        </div>
+        <div id="signup"  class="display">
+    	<form class="signIn">
+    	<div class="field">
+    	<label>TITLE</label>
+        <hr />
+        <div class="textStyle">
+        	Mobit Solutions Sign Up Form
+        </div>
+        </div>
+        <div class="field">
+    	<label>User Name</label>
+        <hr />
+        <div>
+        	<input type="text" name="username"  />
+        </div>
+        </div>
+        <div class="field">
+    	<label>Email</label>
+        <hr />
+        <div>
+        	<input type="text" name="email"  />
+        </div>
+        </div>
+        <div class="field">
+    	<label>PASSWORD</label>
+        <hr />
+        <div>
+        	<input type="password" name="password"  />
+        </div>
+        </div>
+        
+        <div class="field">
+    	<div>
+        	<input type="submit" name="login" value="REGISTER ME"  />
+        </div>
+        </div>
+        </form>
+        </div>
+        <div id="forgetPassword"  class="display">
+    	<form class="signIn">
+    	<div class="field">
+    	<label>TITLE</label>
+        <hr />
+        <div class="textStyle">
+        	Mobit Solutions Recover Form
+        </div>
+        </div>
+        <div class="field">
+    	<label>Your Email</label>
+        <hr />
+        <div>
+        	<input type="text" name="email"  />
+        </div>
+        </div>
+        
+        
+        <div class="field">
+    	<div>
+        	<input type="submit" name="login" value="RETREIVE PASSWORD"  />
+        </div>
+        </div>
+        </form>
+        </div>
+        <div class="field">
+    	<div>
+        	<input type="button" id="signin" name="signin" value="SIGNIN" onclick="return displayLogin()"  />
+        </div>
+        </div>
+        <div class="field">
+    	<div>
+        	<input type="button" name="signup" id="signupbtn" value="SIGNUP" onclick="return displaySignUp()"  />
+        </div>
+        </div>
+        <div class="field">
+    	<div>
+        	<input type="button" name="login" id="forgetPassBtn" value="FORGET PASSWORD" onclick="return displayForgetPasswordForm()"   />
+        </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
